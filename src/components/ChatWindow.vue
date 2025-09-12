@@ -2,7 +2,6 @@
 import { ref, reactive, computed, onMounted, onBeforeUnmount, watch } from "vue";
 import dennyAvatar from "../assets/favicon/android-chrome-192x192.png";
 
-
 type ChatMessage = {
   id: string;
   from: string;
@@ -127,7 +126,7 @@ const ordered = computed(() => [...state.messages]);
         >
           <img
             class="avatar"
-            :src="m.from === props.userId ? props.avatar : dennyAvatar"
+            :src="m.from === props.userId ? props.avatar : (m.from === 'denny' ? dennyAvatar : `https://i.pravatar.cc/150?u=${m.from}`)"
             alt="avatar"
           />
           <div class="bubble">
