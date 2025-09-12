@@ -11,7 +11,7 @@ onMounted(() => {
     user.value = {
       id: "denny",
       name: "Denny",
-      avatar: "https://i.pravatar.cc/150?u=denny",
+      avatar: "/src/assets/favicon/android-chrome-192x192.png",
     };
   } else if (u === "aris") {
     user.value = {
