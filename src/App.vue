@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import ChatWindow from "./components/ChatWindow.vue";
+import dennyAvatar from "./assets/favicon/android-chrome-192x192.png";
 const user = ref<{ id: string; name: string; avatar: string } | null>(null);
 
 onMounted(() => {
@@ -11,7 +12,7 @@ onMounted(() => {
     user.value = {
       id: "denny",
       name: "Denny",
-      avatar: "/src/assets/favicon/android-chrome-192x192.png",
+      avatar: dennyAvatar,
     };
   } else if (u === "aris") {
     user.value = {
