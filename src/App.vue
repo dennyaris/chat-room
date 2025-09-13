@@ -37,7 +37,7 @@ onMounted(() => {
     />
     <div v-else class="hint">
       <h2>Choose a user</h2>
-      <p>Open this page with <code>?user=denny</code> or <code>?user=aris</code></p>
+      <p>Open this page with <a href="?user=denny"><code>?user=denny</code></a> or <a href="?user=aris"><code>?user=aris</code></a></p>
     </div>
   </div>
 </template>
@@ -62,5 +62,13 @@ code {
   background: #f3f4f6;
   padding: 2px 6px;
   border-radius: 4px;
+}
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #2563eb;
 }
 </style>
