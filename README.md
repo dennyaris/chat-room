@@ -1,6 +1,6 @@
 # Chat Room - Real-time Chat Application
 
-A simple real-time chat application built with Vue 3, TypeScript, and Vite. This application allows two users (Denny & Aris) to communicate in real-time through two browser windows without using WebSockets.
+A simple real-time chat application built with Vue 3, TypeScript, and Vite. This application allows two users (Denny & Putri) to communicate in real-time through two browser windows without using WebSockets.
 
 ## Technologies Used
 
@@ -42,7 +42,7 @@ A simple real-time chat application built with Vue 3, TypeScript, and Vite. This
 
 4. Open two browser tabs:
    - Tab 1: `http://localhost:5173/?user=denny`
-   - Tab 2: `http://localhost:5173/?user=aris`
+   - Tab 2: `http://localhost:5173/?user=putri`
 
 5. Send a message in one tab and see it appear instantly in the other tab.
 
